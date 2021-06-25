@@ -36,7 +36,7 @@ export const DiscussCard = () => {
                        <div className="card-footer d-flex flex-wrap justify-content-between align-items-center px-0 pt-0 pb-3">
                            <div className="px-4 pt-3"> <a href="javascript:void(0)" className="text-muted d-inline-flex align-items-center align-middle" data-abc="true"> <i className="fa fa-heart text-danger"></i>&nbsp; <span className="align-middle">445</span> </a> <span className="text-muted d-inline-flex align-items-center align-middle ml-4"> <i className="fa fa-eye text-muted fsize-3"></i>&nbsp; <span className="align-middle">14532</span> </span> </div>
                            <div className="px-4 pt-3"> 
-                           <Link to="/replymodal">
+                           <Link to="/reply">
                             <button type="button" className="btn btn-primary"  data-toggle="modal" data-target="#replyModal"><i className="fa fa-pencil"></i>&nbsp; Reply</button> 
                             </Link>
                             </div>

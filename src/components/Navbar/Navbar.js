@@ -14,7 +14,7 @@ export const Navbar = () => {
                                         <h3> Ask your Question or discuss a topic </h3>
                                     </div>
                                     <div className="px-4 pt-3 bnrimg">
-                                    <Link to="/postmodal">
+                                    <Link to="/post">
                                     <a href="#" className="arrowicon"  data-toggle="modal" data-target="#formModal">
                                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                                 width="50" height="50"
