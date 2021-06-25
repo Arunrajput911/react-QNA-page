@@ -1,11 +1,12 @@
 import React from 'react';
-import {Switch,Route,BrowserRouter} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import {Link} from 'react-router-dom';
 // import "./Navbar.css";
 
 export const Navbar = () => {
     return (
         <div className="container-fluid mt-20">
+        <Redirect to="/" />
                     <div className="row">
                         <div className="col-md-12 no-pad">
                             <div className="card mb-4 banner">

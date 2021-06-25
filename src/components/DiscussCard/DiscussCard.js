@@ -1,11 +1,12 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link,Redirect} from 'react-router-dom';
+
 // import './DiscussCard.css'
 export const DiscussCard = () => {
     return (
-       
+        
     <div className="scrollableContainer mt-20">
-                    
+          <Redirect to="/" />          
     
        <div className="container-fluid">
            <div className="row">

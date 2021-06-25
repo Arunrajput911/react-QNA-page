@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter,Route,Switch } from 'react-router-dom';
+import { BrowserRouter,Route,Switch,Redirect } from 'react-router-dom';
 import {Postmodal} from '../Modals/postmodal/postmodal';
 import {Replymodal} from '../Modals/replymodal/replymodal';
 import {Filtermodal} from "../Modals/filtermodal/filtermodal";
@@ -23,7 +23,9 @@ function App() {
      <Navbar />
      <Switch>
         <Route path="/post" exact component={Postmodal} />
+        
         <Route path="/reply" exact component={Replymodal} />
+        <Redirect from="/reply" to="/" />
         <Route path="/filtermodal" exact component={Filtermodal} />
         <Route path="/sortmodal" exact component={Sortmodal} />
       </Switch>
