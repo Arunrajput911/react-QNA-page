@@ -14,6 +14,9 @@ import { FloatingButtons } from '../floatingButton/floatingButtons';
 import './App.css';
 
 function App() {
+  const askDoubtHandler = () => {
+
+  }
   return (
     <BrowserRouter>
 <div>
@@ -31,7 +34,8 @@ function App() {
       </Switch>
      <HorizontalBar />
      <Navbar2 />
-     <DiscussCard />
+     <DiscussCard/>
+     <Postmodal askDoubt={askDoubtHandler} />
     
     </div>
     </div>
