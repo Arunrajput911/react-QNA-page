@@ -1,11 +1,8 @@
 import React from 'react';
-import { BrowserRouter,Route,Switch,Redirect } from 'react-router-dom';
-import {Postmodal} from '../Modals/postmodal/postmodal';
-import {Replymodal} from '../Modals/replymodal/replymodal';
-import {Filtermodal} from "../Modals/filtermodal/filtermodal";
-import {Sortmodal} from "../Modals/sortmodal/sortmodal";
-import {Navbar} from '../Navbar/Navbar';
-import {Navbar2} from '../Navbar2/Navbar2';
+import { BrowserRouter} from 'react-router-dom';
+
+import {AskBar} from '../AskBar/AskBar';
+import {SwitchBar} from '../SwitchBar/SwitchBar';
 import { DiscussCard } from '../DiscussCard/DiscussCard';
 import {HorizontalBar} from '../horizontalBar/horizontalBar';
 import {Sidebar} from '../sidebar/sidebar';
@@ -23,19 +20,11 @@ function App() {
     <div id="qna-wrapper" class="row">
     <div id="qnasection" class="col-xs-12 col-sm-12 col-lg-9">
     <div id="discussPanel">
-     <Navbar />
-     <Switch>
-        <Route path="/post" exact component={Postmodal} />
-        
-        <Route path="/reply" exact component={Replymodal} />
-        <Redirect from="/reply" to="/" />
-        <Route path="/filtermodal" exact component={Filtermodal} />
-        <Route path="/sortmodal" exact component={Sortmodal} />
-      </Switch>
+     <AskBar />
+     
      <HorizontalBar />
-     <Navbar2 />
-     <DiscussCard/>
-     <Postmodal askDoubt={askDoubtHandler} />
+     <SwitchBar />
+     <DiscussCard />
     
     </div>
     </div>
